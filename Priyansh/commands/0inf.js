@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "info",
 	version: "1.0.1", 
 	hasPermssion: 0,
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+	credits: "SARDAR RDX",
 	description: "Admin and Bot info.",
 	commandCategory: "...",
 	cooldowns: 1,
@@ -24,39 +24,38 @@ const time = process.uptime(),
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【HH:mm:ss】");
 var link =                                     
-["https://i.imgur.com/eDbdlvd.jpg"];
-var callback = () => api.sendMessage({body:` ╾━╤デ╦︻(▀̿Ĺ̯▀̿ ̿)🇮🇳 𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍 🇮🇳 
-(⌐▀͡ ̯ʖ▀)︻̷┻̿═━一-
+["https://i.postimg.cc/1XhB5fnQ/20250808-190722.jpg"];
+var callback = () => api.sendMessage({body:`
+╔════◇◆◇════╗
+      🌟 𝗕𝗢𝗧 𝗣𝗥𝗢𝗙𝗜𝗟𝗘 🌟
+╚════◇◆◇════╝
 
-☄️Bot Name︎︎︎☄️  ${global.config.BOTNAME}
+🤖 𝗡𝗔𝗠𝗘: ${global.config.BOTNAME}
+══════════════════
 
-🔥Bot Admin🔥☞︎︎︎☜︎︎︎✰ ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙💔🥀
+👑 𝗢𝗪𝗡𝗘𝗥: 『⸙』𝐒𝐇𝐄𝐇𝐙𝐀𝐃𝐀『⸙』
+══════════════════
 
-🙈bot andmin owner facebook id link🙈➪ www.facebook.com/priyanshu.rajput.official 💞🕊️
+💬 𝗣𝗥𝗘𝗙𝗜𝗫: ${global.config.PREFIX}
+══════════════════
 
-👋For Any Kind Of Help Contact On Telegram  Username 👉 @Priyanshrajput😇
+📌 𝗔𝗗𝗠𝗜𝗡: 𝐒𝐇𝐄𝐇𝐙𝐀𝐃𝐀 ✨
+══════════════════
 
-✧══════•❁❀❁•══════✧
+📲 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞: https://www.facebook.com/share/19pXU3PagG/
+══════════════════
 
-🌸Bot Prefix🌸☞︎︎︎☜︎︎︎✰ ${global.config.PREFIX}
+💌 𝗖𝗢𝗡𝗧𝗔𝗖𝗧: ســـۧۛـ𝆊۬ـر پـــۧۛـ𝆊۬ـھرا شـــۧۛـ𝆊۬ـہزادہ  (Facebook)
+══════════════════
 
-♥️Bot Owner♥️ ☞︎︎︎☜︎︎︎✰ 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭
+📅 𝗧𝗢𝗗𝗔𝗬: ${juswa}
+⏳ 𝗨𝗣𝗧𝗜𝗠𝗘: ${hours}:${minutes}:${seconds}
+══════════════════
 
-🥳UPTIME🥳
-
-🌪️Today is🌪️ ☞︎︎︎☜︎︎︎✰ ${juswa} 
-
-⚡Bot is running⚡ ${hours}:${minutes}:${seconds}.
-
-✅Thanks for using ${global.config.BOTNAME} Bot🖤
-
-
-🦢🍒•••ꞪɛᏒɛ ɪʂ ɮ❍┼ ❍ωɳɜɽ ɳaʍɜ•••🌷💞
-┏━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┓
-🌸✦✧✧✧✧✰🍒ℙ𝕣𝕚𝕪𝕒𝕟𝕤𝕙🌿✰✧✧✧✧✦🌸
-┗━🕊️━━°❀•°:🎀🧸💙🧸🎀:°•❀°━━💞━┛
+⚡ 𝗦𝗧𝗔𝗧𝗨𝗦: RUNNING SMOOTH ✅
 
 
 `,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
+   
