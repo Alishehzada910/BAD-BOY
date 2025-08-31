@@ -868,8 +868,8 @@ if ((event.body.toLowerCase() == "🥑")) {
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
  var msg = {
-  body: `❝ ${rand} ❞ 
-         👑 OWNER: 𝐒𝐇𝐄𝐇𝐙𝐀𝐃𝐀` 
+  body: `${name}❝ ${rand} ❞ 
+  👑 OWNER: 𝐒𝐇𝐄𝐇𝐙𝐀𝐃𝐀` 
 
 };
 
